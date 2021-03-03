@@ -3,7 +3,7 @@ require "prawn"
 module Prawnto
   module TemplateHandlers
     class Base
-      def self.call(template)
+      def self.call(template, source)
         check_for_pdf_redefine(template.source)
 
         "_prawnto_compile_setup;" +
